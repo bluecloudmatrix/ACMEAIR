@@ -1,0 +1,8 @@
+acmeair001:
+  build: ../acmeair-nodejs/
+  ports:
+  - "31770:31770"
+  links:
+  - mongo001
+mongo001:
+        build: .
